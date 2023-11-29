@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>File Converter</h1>
+        <p>Kelompok 5: Maya Listyani (5322600001), Sri Maulinda Aprilia (5322600020), Muhammad Mahendra (5322600027)</p>
+        <form id="converterForm" enctype="multipart/form-data">
+            <label for="file">Choose MP3 File:</label>
+            <input type="file" id="file" name="file" accept=".mp3" required>
+            
+            <label for="format">Choose Format:</label>
+            <select id="format" name="format" required>
+                <option value="flac">FLAC</option>
+                <option value="ogg">OGG</option>
+                <option value="m4a">M4A</option>
+                <option value="mkv">MKV</option>
+            </select>
+            
+            <button type="button" onclick="convertFile()">Convert</button>
+        </form>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
