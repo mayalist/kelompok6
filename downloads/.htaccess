@@ -1,4 +1,0 @@
-<FilesMatch "\.(?i:flac|ogg|m4a|mkv)$">
-    ForceType application/octet-stream
-    Header set Content-Disposition attachment
-</FilesMatch>
