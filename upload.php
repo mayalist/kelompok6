@@ -34,7 +34,7 @@ if (isset($_POST["submit"])) {
 
         $message = "File berhasil diupload dan diubah menjadi $filename.$compressionFormat.";
 
-        unlink($target_upload);
+        //unlink($target_upload);
 
         $downloadButton = '<a href="' . $target_compressed . '" download class="download-button">
                             Download Hasil Konversi
@@ -43,7 +43,7 @@ if (isset($_POST["submit"])) {
         $message = "Gagal mengupload file.";
     }
 }
-?>
+?> 
 
 <!DOCTYPE html>
 <html lang="en">
